@@ -1,0 +1,186 @@
+body{
+  margin:0;
+  padding:0;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    background: #3a4248;
+    color:#ffffff;
+    height:50px;
+}
+
+nav h2{
+    margin:0;
+    cursor: pointer;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    background: #1a7cca;
+    padding: 10px;
+    font-weight: 600;
+    color:#f1f1f1;
+    cursor:pointer;
+    box-shadow: 0 2px 4px #184d75;
+    transition: all 0.3s ease;
+}
+
+nav ul li:hover{
+  background:#1d6ba9;
+}
+
+a{
+    text-decoration: none;
+    color:#f1f1f1;
+}
+
+.container-tasks{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    padding:10px;
+}
+
+.task{
+    width: 260px;
+    height: 315px;
+    background: #f9f9f9;
+    padding-top: 10px;
+    border: 1px solid #c7c7c7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin:20px 0;
+}
+
+.task div:first-child{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.task div:last-child {
+    margin-top:auto;
+    width:100%;
+    display:flex;
+    background:#ececec;
+    border: 1px solid #c7c7c7;
+    justify-content:space-evenly;
+    padding: 10px 0;
+}
+
+.task div:first-child p{
+    overflow: auto;
+    word-break: break-word;
+}
+
+.task div:last-child button,form button{
+    width:60px;
+    height:31px;
+    margin: 0 10px;
+    color:#ffffff; 
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    width: 60px;
+    height: 31px;
+    transition: all 0.3s ease;
+    cursor:pointer;
+}
+
+.task div:last-child button:first-child{
+    background:#e42842;
+}
+
+.task div:last-child button:first-child:hover{
+    background:#ca233a;
+}
+
+.task div:last-child button:last-child{
+    background:#0b7cd6;
+}
+
+.task div:last-child button:last-child:hover{
+    background:#0969b5;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 350px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 470px;
+    border-radius: 5px;
+    background:#191919;
+    color:#ffffff;
+}
+
+form h2{
+    margin:0;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    min-width: 225px;
+    margin: 10px 0;
+}
+
+form div label{
+    margin-bottom: 10px;
+}
+
+form button{
+    background: #0b68da;
+    width: 95%;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    background: #225ba0;
+}
+
+form div textarea{
+    height: 130px;
+    font-size: 14px;
+    resize: none;
+}
+
+form div input[type="text"]{
+border:none;
+background: none;
+color:#ffffff;
+border-bottom: 2px solid #ffffff;
+outline: none;
+font-size: 14px;
+transition: all 0.3s ease;
+}
+
+form div input[type="text"]::placeholder{
+    color:#efe;
+}
+
+form div input[type="text"]:focus{
+    border-bottom-color: #3f8cea;
+}
